@@ -18,7 +18,7 @@ public class Main {
         System.out.println("Type the title below: ");
         String bookChoice = read.nextLine();
 
-        int command = 0;
+        //Change the user input to int command = 0; instead of having them type out the title of their bookChoice
 
             if (bookChoice.equalsIgnoreCase("goldilocks and the three bears")) {
                 MenuOptions.readGoldilocks();
