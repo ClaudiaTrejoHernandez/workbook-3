@@ -57,12 +57,15 @@ public class ProductReader {
 
             }reader.close();
 
+            //Display stack trace if there was an error
         } catch (IOException e) {
             System.out.println("Something went wrong while reading this file.");
+            //You could also use e.printStackTrace(); to print out what the error was
         }
         return productList;
 
     }
+
 }
 
 
