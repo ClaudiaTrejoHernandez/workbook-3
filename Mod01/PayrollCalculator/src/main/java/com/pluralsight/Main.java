@@ -1,5 +1,4 @@
 package com.pluralsight;
-import java.io.PrintStream;
 import java.util.List;
 
 public class Main {
@@ -9,8 +8,9 @@ public class Main {
 
         for (Employee e : employees) {
 
-            System.out.println("----------------------------------------------------------------------");
-            System.out.printf("Employee name: %s\nEmployee ID: %d\nEmployee Gross Pay: %2f\n",
+            //5. Display the employee using a printf and by calling the employee's methods
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.printf("Employee name: %s\nEmployee ID: %d\nEmployee Gross Pay: %.2f\n",
                     e.getName(), e.getEmployeeID(), e.getGrossPay());
         }
     }
