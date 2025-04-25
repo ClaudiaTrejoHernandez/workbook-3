@@ -8,8 +8,6 @@ public class Employee {
     private double hoursWorked;
     private double payRate;
 
-    public double grossPay;
-
 
     //Methods
 
@@ -53,8 +51,12 @@ public class Employee {
     }
 
     public double getGrossPay(){
-        return grossPay = this.hoursWorked * this.payRate;
+        return hoursWorked * payRate;
 
+    }
+
+    public String displayGrossPay(){
+        return String.format("%d, %s, %.2f\n", employeeID, name, getGrossPay());
     }
 
 }

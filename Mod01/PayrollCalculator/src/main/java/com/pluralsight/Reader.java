@@ -19,7 +19,8 @@ public class Reader {
 
         try {
             BufferedReader bufReader = new BufferedReader(new FileReader("employees.csv"));
-            String line = bufReader.readLine();
+            bufReader.readLine(); //skip header
+            String line;
 
             //2. Read each line of text
             while ((line = bufReader.readLine()) != null) {
@@ -39,7 +40,7 @@ public class Reader {
                     employeeList.add(e);
                     System.out.println(e.getName() + " was added to the list.");
                 }
-            } read.close();
+            }
 
         }
 
